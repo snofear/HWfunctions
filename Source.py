@@ -3,7 +3,7 @@ import json
 
 def game(zacetno, koncno):
     skrito = randint(zacetno, koncno - 1)
-    print(zacetno, skrito, koncno)
+    #print(zacetno, skrito, koncno)
     izbrana_stevilka = -1
     isTrue = False
     seznam_ugibanj = []
@@ -32,5 +32,5 @@ def vprasaj_osebo():
 if __name__ == "__main__":
     ime_osebe = vprasaj_osebo()
     ugibanja = game(1, 100)
-    print(ugibanja)
+    #print(ugibanja)
     zapisi_v_datoteko(ime_osebe+".txt", ugibanja)
